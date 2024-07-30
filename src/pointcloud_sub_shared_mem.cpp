@@ -74,8 +74,8 @@ int main() {
         // total_latency += std::chrono::nanoseconds(static_cast<long long>(latency_ns));
         total_latency += latency_ns;
         counter++;
-        if (counter == 100) {
-            uint64_t avg_latency = total_latency / 100;
+        if (counter == 1000) {
+            uint64_t avg_latency = total_latency / 1000;
             std::cout << "Average latency: " << avg_latency << " ns" << std::endl;
 
             std::cout << "Average latency: " << (avg_latency / 1000000.0f) << " ms" << std::endl;

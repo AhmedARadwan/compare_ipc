@@ -104,7 +104,7 @@ int main() {
         // Post semaphore
         sem_post(pub_sem);
         std::cout << "Publishing PointCloud2 message with seq: " << cloud->header.seq << std::endl;
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        std::this_thread::sleep_for(std::chrono::milliseconds(10));
     }
 
     // Close and unlink semaphore
